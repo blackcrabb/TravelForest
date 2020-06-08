@@ -303,3 +303,17 @@ p, a, button, input {
   #current-users h3 {
     font-size: 4.5rem;
     margin-top: 0.75rem; }
+
+#testimonials {
+  background-color: rgba(227, 227, 227, 0.08);
+  margin: 12.5rem 0;
+  position: relative;
+  padding: 400px 0;
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%); }
+  #testimonials #testimonials-bg {
+    position: absolute;
+    width: 70vw;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white; }
