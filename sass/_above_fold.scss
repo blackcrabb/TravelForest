@@ -29,6 +29,7 @@ $bg-color: rgba(227 , 227,227,.08);
 
 #above-fold {
     position: relative;
+    z-index: 12;
     color: white;
     padding-left: 92px;
     padding-top: 62px;
@@ -110,8 +111,9 @@ $bg-color: rgba(227 , 227,227,.08);
         background-color: $bg-color;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: flex-start;
-        color: #3b3b3b;
+        color: #b3b3b3;
         font-size: px-to-rem(18px);
         transition: opacity 1.4s;
 
@@ -153,7 +155,30 @@ $bg-color: rgba(227 , 227,227,.08);
             display: block;
             background-color: transparent;
             border-bottom: 1px solid rgba(255, 255, 255, .8);
-        
+            margin: px-to-rem(50px) 0;
+            padding: 6px 18px;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: #292929;
+            padding: .4em 5.4em;
+            border-radius: 4px;
+            margin-left: 8px;
+            margin-bottom: px-to-rem(66px);
+            transition: all .3s;
+
+            &:hover{
+                opacity: .8;
+                transform: scale(1.1);
+            }
+        }
+
+        ::placeholder{color: inherit;}
+
+        a{
+            color: #b29dff;
+            &:hover{opacity: .7;}
         }
     }
 }
